@@ -1,7 +1,5 @@
-package com.flexcar.elevator;
+package com.flexcar.elevator.controller;
 
-import com.flexcar.elevator.controller.ClosestElevatorControllerImpl;
-import com.flexcar.elevator.controller.ElevatorController;
 import com.flexcar.elevator.model.Constants;
 
 public class ElevatorControllerFactory {

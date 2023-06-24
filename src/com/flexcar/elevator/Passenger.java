@@ -1,6 +1,7 @@
 package com.flexcar.elevator;
 
 import com.flexcar.elevator.controller.ElevatorController;
+import com.flexcar.elevator.controller.ElevatorControllerFactory;
 import com.flexcar.elevator.model.Constants;
 import com.flexcar.elevator.model.ElevatorDirectionButtonEnum;
 
