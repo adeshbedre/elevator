@@ -1,6 +1,7 @@
 package com.flexcar.elevator;
 
 import com.flexcar.elevator.controller.ElevatorController;
+import com.flexcar.elevator.model.Constants;
 import com.flexcar.elevator.model.ElevatorDirectionButtonEnum;
 
 public class Passenger {
@@ -51,8 +52,8 @@ public class Passenger {
 			System.out.println("Already inside elavator");
 			return;
 		}
-		
-		Elevator elevator = ElevatorController.callClosestElevator(this.currentFloor, direction);
+		ElevatorController closestElevatorAlgo = ElevatorControllerFactory.fetchElevatorAlgo(Constants.ALGO_CLOSEST_ELEVATOR);
+		Elevator elevator = closestElevatorAlgo.callClosestElevator(this.currentFloor, direction);
 		this.calledElevator = elevator;
 		System.out.println("passenger is at floor "+currentFloor);
 		System.out.println("The closest elevator called is "+elevator);
